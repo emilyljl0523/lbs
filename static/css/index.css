@@ -1,0 +1,26 @@
+body {
+  background: #eeeeee;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Microsoft Yahei";
+}
+.header {
+  background: black;
+  height: 40px;
+}
+.main {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 40px;
+  position: absolute;
+  display: -webkit-box;
+}
+.main .side-bar {
+  width: 200px;
+  background: red;
+}
+.main .content {
+  -webkit-box-flex: 1;
+  background: blue;
+}

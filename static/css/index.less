@@ -1,0 +1,28 @@
+@bgColor:#eee;
+body{
+	background: @bgColor;
+	margin:0;
+	font-size: 14px;
+	font-family: "Microsoft Yahei"
+}
+.header{
+	background: #000;
+	height:40px;
+}
+.main{
+	left:0;
+	right:0;
+	bottom: 0;
+	top:40px;
+	position: absolute;
+	display: -webkit-box;
+	.side-bar{
+		width: 200px;
+		background: red;
+	}
+	.content{
+		-webkit-box-flex:1;
+		background: blue
+		
+	}
+}
