@@ -1,6 +1,6 @@
 requirejs.config({
-    //By default load any module IDs from js/lib
-    deps:["lib/index"],
+    //preload that's to say,load the modules by default when the page is ready
+    deps:["backbone","template","templateSyntax","init"], 
     baseUrl: 'static/js',
     //except, if the module ID starts with "app",
     //load it from the js/app directory. paths
@@ -8,22 +8,31 @@ requirejs.config({
     //never includes a ".js" extension since
     //the paths config could be for a directory.
     paths: {
+        init:'lib/index',
         jquery: 'jquery-1.9.1',
         backbone:"backbone",
         underscore:"underscore",
         template:"template",
         templateSyntax:"template-syntax",
-        util:'lib/util'
+        util:'lib/util',
+        sidebar:"../module/sidebar/view"
     }, 
      shim: {
         'backbone': {
             //These script dependencies should be loaded before loading
             //backbone.js
-            deps: ["underscore","jquery"],
+            deps: ["jquery","underscore"],
             //Once loaded, use the global 'Backbone' as the
             //module value.
             exports: 'Backbone'
         },
         'underscore': {exports: '_'}
     }
+});
+
+/*global config set here*/
+define(function(){
+    return {
+        moduleRoot:""
+    };
 });

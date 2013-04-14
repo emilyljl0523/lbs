@@ -1,0 +1,1 @@
+this is for single tmpl

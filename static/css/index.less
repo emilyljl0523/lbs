@@ -1,11 +1,20 @@
 @bgColor:#eee;
+
+/*global css settings*/
+ul,h1,h2,h3,h4{
+	margin:0;
+	padding: 0;
+}
+a{text-decoration: none;}
+ul{list-style: none;}
 body{
 	background: @bgColor;
 	margin:0;
 	font-size: 14px;
-	font-family: "Microsoft Yahei"
+	font-family: "Microsoft Yahei";
 }
 .header{
+	color:#fff;
 	background: #000;
 	height:40px;
 }
@@ -18,7 +27,14 @@ body{
 	display: -webkit-box;
 	.side-bar{
 		width: 200px;
-		background: red;
+		li{
+			padding:4px 0 4px 12px;
+			border-top:1px solid #eee;
+			border-bottom:1px solid #ddd;
+			a{
+				color:#333;
+			}
+		}
 	}
 	.content{
 		-webkit-box-flex:1;

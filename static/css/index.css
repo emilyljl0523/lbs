@@ -1,3 +1,19 @@
+/*global css settings*/
+
+ul,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
 body {
   background: #eeeeee;
   margin: 0;
@@ -5,6 +21,7 @@ body {
   font-family: "Microsoft Yahei";
 }
 .header {
+  color: white;
   background: black;
   height: 40px;
 }
@@ -18,7 +35,14 @@ body {
 }
 .main .side-bar {
   width: 200px;
-  background: red;
+}
+.main .side-bar li {
+  padding: 4px 0 4px 12px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #dddddd;
+}
+.main .side-bar li a {
+  color: #333333;
 }
 .main .content {
   -webkit-box-flex: 1;
