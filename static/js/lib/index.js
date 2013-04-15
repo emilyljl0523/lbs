@@ -5,6 +5,6 @@
 	
 });*/
 
-define(['sidebar'],function(sidebar){
-
+define(["backbone", "templateSyntax","sidebar"],function(sidebar){
+	
 });

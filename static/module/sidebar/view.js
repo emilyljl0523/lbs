@@ -1,8 +1,7 @@
-define(['backbone',"text!../module/sidebar/sidebar.tpl"],function(Backbone,tpl){
+define(["text!../module/sidebar/sidebar.tpl"],function(Backbone,tpl){
 	var SideBarView=Backbone.View.extend({
 		el:".side-bar",
 		initialize:function(){
-			debugger;
 			var data={menu:[{text:"用户数据1",url:"http://www/baidu.com"},{text:"用户数据2",url:"http://www/baidu.com"}],text:"1"};
 			var render=template.compile(tpl);
 			var html=render(data);

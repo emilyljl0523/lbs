@@ -1,6 +1,6 @@
 requirejs.config({
     //preload that's to say,load the modules by default when the page is ready
-    deps:["backbone","template","templateSyntax","init"], 
+    deps:["init"], 
     baseUrl: 'static/js',
     //except, if the module ID starts with "app",
     //load it from the js/app directory. paths
@@ -26,7 +26,10 @@ requirejs.config({
             //module value.
             exports: 'Backbone'
         },
-        'underscore': {exports: '_'}
+        'underscore': {exports: '_'},
+        templateSyntax:{
+            deps:["template"]
+        }
     }
 });
 
