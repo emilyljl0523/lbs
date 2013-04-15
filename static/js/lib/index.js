@@ -5,6 +5,8 @@
 	
 });*/
 
-define(["backbone", "templateSyntax","sidebar"],function(sidebar){
-	
+define([ "templateSyntax","backbone" ],function( ){
+	require(['sidebar'],function(){
+		debugger;
+	});
 });

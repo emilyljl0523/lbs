@@ -14,9 +14,8 @@ requirejs.config({
         underscore:"underscore",
         template:"template",
         templateSyntax:"template-syntax",
-        util:'lib/util',
-        sidebar:"../module/sidebar/view"
-    }, 
+        util:'lib/util', sidebar:"../module/sidebar/view"
+    },
      shim: {
         'backbone': {
             //These script dependencies should be loaded before loading
