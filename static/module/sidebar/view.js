@@ -1,4 +1,4 @@
-define(["text!../module/sidebar/sidebar.tpl"],function(Backbone,tpl){
+define(["text!../module/sidebar/sidebar.tpl"],function(tpl){
 	var SideBarView=Backbone.View.extend({
 		el:".side-bar",
 		initialize:function(){
